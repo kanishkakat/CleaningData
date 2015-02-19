@@ -34,7 +34,7 @@ RunAnalysis <- function(){
   ## Calculate averages on basis of activity and subject for each readings
   TidyData <- AverageActivity(JoinData)
   ## Write the finally created data set to a text file without column heading
-  write.table(TidyData, "Tidy_Data.txt")
+  write.table(TidyData, "Tidy_Data.txt", row.name=FALSE)
 }
 
 ## Step1: This function performs step one of the assignment. 
