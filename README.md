@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------------
 This repository contains solution for the Course Project Assignment for Cleaning Data
-
+--------------------------------------------------------------------------------------
 run_analysis.R is the script which performs the functionality as stated in the requirements below:
 1.Merges the training and the test sets to create one data set.
 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
