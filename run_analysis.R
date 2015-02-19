@@ -42,11 +42,11 @@ RunAnalysis <- function(){
 ## Merges the activity, subject and test/train (activity readings) data for test/train
 ## Returns the merged data set for train/test
 MergeData <- function(DataPath, Type) {
-  ## Create the path for readings of activities
+  ## Create the path for readings of estimated activities
   Path <- paste(DataPath, "/X_", Type, ".txt", sep = "")
   Data <- read.table(Path) 
   Data <- as.data.frame(Data)
-  ## Retrieve the column names for the readings 
+  ## Retrieve the column names for the estimated activities  
   Label <- read.table("./data/features.txt") 
   Label <- as.vector(Label[,2])
   colnames(Data) <- c(Label)
