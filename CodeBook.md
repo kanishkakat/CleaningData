@@ -2,6 +2,9 @@
 Description of the understanding and approach 
 ----------------------------------------------
 
+------------------------
+Uderstanding the Data
+------------------------
 Before proceeding with the course project, it is very important to understand the data we have been provided with. 
 1. The experiments have been carried out with a group of 30 volunteers out of which 30% were selected for test data and 70% for training data. This means 9 volunteers were observed for test data and 21 for training data.
 2. activity_labels.txt (6Rows, 2Columns).
@@ -29,7 +32,9 @@ The things which needs to be observed before proceeding:
 3. The column headings for the estimated readings could be taken from file features.txt.
 4. The above three steps can be repeated for test data as well and can then be merged with training data.
 
-
+--------------------------------
+Approach to the requirement
+--------------------------------
 Lets move on to the implementation part by creating code in R:
 You should create one R script called run_analysis.R that does the following. 
 1. Merges the training and the test sets to create one data set.
@@ -51,3 +56,16 @@ You should create one R script called run_analysis.R that does the following.
 	b) Perform the same operaion on activity labels as well
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 	a) Create a seperate file using write.table() 
+
+----------------------------
+Key Data Sets and Variables
+----------------------------
+TestData 	: Merged data set for test with subject ID and activity ID.
+TrainData	: Merged data set for train with subject ID and activity ID.
+JoinData	: Merged data set for train and test
+TidyData	: The final clean data set 
+
+----------------------------
+Output File
+----------------------------
+Tidy_Data.txt	: Output file created to store the tidy data
