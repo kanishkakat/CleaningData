@@ -8,8 +8,9 @@ run_analysis.R is the script which performs the functionality as stated in the r
 4.Appropriately labels the data set with descriptive variable names. 
 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-
+-----------------------------------------------------------
 The script contains seven functions which are interlinked. 
+-----------------------------------------------------------
 1.RunAnalysis      : This is the main function and it needs to be called to invoke the entire functionality
 2.MergeData        : This function merges the activity and subject to the test/train data
 3.FilterData       : Filter the data columns for mean() and std()
@@ -18,7 +19,9 @@ The script contains seven functions which are interlinked.
 6.AverageActivity  : Average out the activity readings on basis of subject and activity
 7.FormatWords      : Formats the words
 
+--------------
 RunAnalysis()
+--------------
 Input Parameter 	: None
 Output Parameter 	: None
 Algorithm:
