@@ -1,3 +1,4 @@
+--------------------------------------------------------------------------------------
 This repository contains solution for the Course Project Assignment for Cleaning Data
 
 run_analysis.R is the script which performs the functionality as stated in the requirements below:
