@@ -48,75 +48,120 @@ Write the finally created data set to a text file called Tidy_Data.txt.
 MergeData()
 ------------
 Input Parameter		: Path, Type(train/test).
+
 Output Parameter	: Merged Data Set for train/test.
+
 Algorithm:
+
 Create the path for reading the activitiy readings.
+
 Read the data set as specified in input parameter (train/test).
+
 Get the column names from the file features.txt.
+
 Assign column names to the data set.
+
 Read the subjects data and assign column name.
+
 Read the activity data and assign the column name.
+
 Merge the subject, activity and the activity readings.
+
 Return the merged data set.
 
 ------------
 FilterData()
 ------------
 Input Parameter		: Merged Data Set, Filter keyword1, Filter keyword2.
+
 Output Parameter	: Filtered Data Set.
+
 Algorithm:
+
 Retrieve the column names of the input data set.
+
 Prepare the input filtering criteria.
+
 Get the indexes for the filtered columns identified.
+
 Add the subject and activity index to the filtered indexes.
+
 Filter the data set based on filtered index.
+
 Return the filtered data set.
 
 ---------------
 ActivityName()
 --------------
 Input Parameter		: Filtered Data Set.
+
 Output Parameter	: Data Set with Activity Labels.
+
 Algorithm:
+
 Read the activity labels file.
+
 Clean the activity label using the function FormatWords.
+
 Create activity label for the input Filtered Data Set.
+
 Replace the activity ID withe activity label in the Filtered Data Set.
+
 Return the Data Set with Activity Labels.
 
 --------------
 CleanLabels()
 -------------
 Input Parameter		: Data Set Labels.
+
 Output	Parameter	: Clean Data Set Labels.
+
 Algorithm:
+
 Remove "()" from the column names.
+
 Capitalize M in "mean".
+
 Capitalize S in "std".
+
 Remove "-" from the column names.
+
 Return clean data set labels.
 
 ------------------
 AverageActivity()
 -----------------
 Input Parameter		: Data Set.
+
 Output Parameter	: Data Set with Averages.
+
 Algorithm:
+
 Aggregate the data set on basis of subject and activity for mean, one column at a time.
+
 Repeat the activity for each column and keep it merging to the data set.
+
 Assign column names.
+
 Return the Data Set with Averages.
 
 --------------
 FormatWords()
 --------------
 Input Parameter		: Character String.
+
 Output Parameter	: Formatted Character String.
+
 Algorithm:
+
 Convert the complete text to lower case.
+
 Identify the indexes of the positions requiring capital character.
+
 Convert the required positions to capital.
+
 Return the converted string.
+
 
 
 CodeBook.md contains the approach followed to fulfill the requirements specified in the assignment. It also list down the key variables used and the purpose.
