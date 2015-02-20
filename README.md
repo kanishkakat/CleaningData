@@ -163,7 +163,5 @@ Convert the required positions to capital.
 Return the converted string.
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 CodeBook.md contains the approach followed to fulfill the requirements specified in the assignment. It also list down the key variables used and the purpose.
-
-
