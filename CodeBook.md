@@ -1,7 +1,7 @@
 ----------------------------------------------
 Key Data Sets and Variables 
 ----------------------------------------------
-The script contains seven functions which are interlinked and use various data sets and variables. Find below the list of functions in the script with their repective variable and data sets description 
+The script run_analysis.R contains seven functions which are interlinked and use various data sets and variables. Find below the list of functions in the script with their repective variable and data sets description 
 
 -----------------------------
 RunAnalysis()
