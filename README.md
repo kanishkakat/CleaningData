@@ -23,16 +23,26 @@ The script contains seven functions which are interlinked.
 --------------
 RunAnalysis()
 --------------
--Input Parameter 	: None.
--Output Parameter 	: None.
+Input Parameter 	: None.
+
+Output Parameter 	: None.
+
 Algorithm:
+
 Invoke the function MergeData for test and train data sets.
+
 Merge the data sets returned by MergeData function.
+
 Invoke the function FilterData to filter the columns on basis of mean and standard deviation.
+
 Add descriptive label for activity using the function ActivityName.
+
 Invoke CleanLabels to make the column names more readible and descriptive.
+
 Invoke function AverageActivity to get the averages on basis of activity and subject for each readings.
+
 Write the finally created data set to a text file called Tidy_Data.txt.
+
 
 ------------
 MergeData()
