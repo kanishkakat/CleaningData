@@ -1,10 +1,10 @@
 ----------------------------------------------
 Key Data Sets and Variables 
 ----------------------------------------------
-The script contains seven functions which are interlinked and use various data sets and variables
+The script contains seven functions which are interlinked and use various data sets and variables. Find below the list of functions in the script with their repective variable and data sets description 
 
 -----------------------------
-1.RunAnalysis()
+RunAnalysis()
 -----------------------------
 1. TestData : Data set for test subject, activity and estimated readings merged.
 2. TrainData : Data set for training subject, activity and estimated readings merged.
@@ -13,7 +13,7 @@ The script contains seven functions which are interlinked and use various data s
 5. Tidy_Data.txt : The output file to which tidy data set is written to
 
 -------------------------------
-2.MergeData()
+MergeData()
 -------------------------------
 1. DataPath : The input parameter containing path for test/train data files
 2. Type : Type specifies if it is for test or train
@@ -24,7 +24,7 @@ The script contains seven functions which are interlinked and use various data s
 7. Activity: Contains the activity IDs for estimated readings
  
 ---------------------------------
-3. FilterData()
+FilterData()
 ---------------------------------
 1. Input : Input parameter data set containing merged data set
 2. Filter1: Contains filtering criteria "mean" in this case
@@ -34,24 +34,24 @@ The script contains seven functions which are interlinked and use various data s
 6. ColIdx: Contains all the filtered column indexes
   
 -----------------------------------
-4. ActivityName()
+ActivityName()
 -----------------------------------
 1. Input: Input parameter data set containing filtered data set
 2. Activity: Containing activity IDs along with activities description
 
 ------------------------------------
-5. CleanLabels()
+CleanLabels()
 ------------------------------------
 1. Input : Input parameter containing the filtered data set labels
 
 -------------------------------------
-6. AverageActivity()
+AverageActivity()
 -------------------------------------
 1. Input : Contains the filtered data set
 2. TidyData:The final output, the tidy data set
  
 --------------------------------------
-7. FormatWords()
+FormatWords()
 --------------------------------------
 1. txt: The input text string which has to be formatted
 2. theletters : Contains all the letters in the text string
@@ -83,7 +83,7 @@ The things which needs to be observed before proceeding:
 --------------------------------
 Approach to the requirement
 --------------------------------
-Lets move on to the implementation part by creating code in R:
+
 --------------------------------------------------------------------------
 Requirement1 :Merges the training and the test sets to create one data set.
 ---------------------------------------------------------------------------
@@ -93,14 +93,14 @@ Requirement1 :Merges the training and the test sets to create one data set.
 4. Add activity number using files y_train.txt
 5. Repeat the above steps for test data as well
 6. Merge the training and test data
-7. 
+
 -----------------------------------------------------------------------------------------------------
 Requirement2 :Extracts only the measurements on the mean and standard deviation for each measurement. 
 -----------------------------------------------------------------------------------------------------
 1. Use the data created from requirement 1
 2. Identify the columns containing mean() and std() to filer out the records further
 3. Retain only data for each of the columns identified in step2
-4. 
+
 -------------------------------------------------------------------------------------------------------
 Requirement3 :Uses descriptive activity names to name the activities in the data set
 -------------------------------------------------------------------------------------------------------
