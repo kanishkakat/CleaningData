@@ -23,8 +23,8 @@ The script contains seven functions which are interlinked.
 --------------
 RunAnalysis()
 --------------
-Input Parameter 	: None.
-Output Parameter 	: None.
+-Input Parameter 	: None.
+-Output Parameter 	: None.
 Algorithm:
 Invoke the function MergeData for test and train data sets.
 Merge the data sets returned by MergeData function.
