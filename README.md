@@ -2,22 +2,22 @@
 This repository contains solution for the Course Project Assignment for Cleaning Data
 --------------------------------------------------------------------------------------
 run_analysis.R is the script which performs the functionality as stated in the requirements below:
-1.Merges the training and the test sets to create one data set.
-2.Extracts only the measurements on the mean and standard deviation for each measurement. 
-3.Uses descriptive activity names to name the activities in the data set
-4.Appropriately labels the data set with descriptive variable names. 
-5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 -----------------------------------------------------------
 The script contains seven functions which are interlinked. 
 -----------------------------------------------------------
-1.RunAnalysis      : This is the main function and it needs to be called to invoke the entire functionality.
-2.MergeData        : This function merges the activity and subject to the test/train data.
-3.FilterData       : Filter the data columns for mean() and std().
-4.ActivityName     : Add descriptive activity label in place of activity ID.
-5.CleanLabel       : Clean the label names with more descritive and meaningful labels.
-6.AverageActivity  : Average out the activity readings on basis of subject and activity.
-7.FormatWords      : Formats the words.
+1. RunAnalysis      : This is the main function and it needs to be called to invoke the entire functionality.
+2. MergeData        : This function merges the activity and subject to the test/train data.
+3. FilterData       : Filter the data columns for mean() and std().
+4. ActivityName     : Add descriptive activity label in place of activity ID.
+5. CleanLabel       : Clean the label names with more descritive and meaningful labels.
+6. AverageActivity  : Average out the activity readings on basis of subject and activity.
+7. FormatWords      : Formats the words.
 
 --------------
 RunAnalysis()
